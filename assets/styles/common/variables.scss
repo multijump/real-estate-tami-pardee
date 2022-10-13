@@ -1,0 +1,70 @@
+/* common */
+
+$font-primary: 'Work Sans', sans-serif;
+$color-primary: #003B5C;
+
+/* colors */
+
+$background-gray: #F3F3F3;
+$black: #1F2021;
+$white: #FFFFFF;
+$main-pink: #FF41B9;
+$darkest-pink: #DC008B;
+$darkest-navy: #012F48;
+$burnt-orange: #CC4110;
+$lightest-powder-blue: #E3F5FF;
+$darkest-powder-blue: #3AA7E4;
+$lightest-navy: #1172A8;
+$darkest-blush: #FFD0DB;
+$main-blush: #FCE1ED;
+$lighter-blush: #FEECF6;
+$lightest-blush: #FFF2F8;
+$lighter-sand: #F0DAD2;
+$rose-white: #FEF1EC;
+$grey: #747B7E;
+
+/* breakpoints */
+
+$small-devices-width: 576px;
+$medium-devices-width: 768px;
+$large-devices-width: 992px;
+$extra-large-devices-width: 1200px;
+
+/* fixed width */
+$post-fixed-width: 900px;
+
+/* mixin */
+@mixin focus-dark {
+    outline: 2px dotted $darkest-pink;
+    outline-offset: 4px;
+}
+
+@mixin focus-light {
+    outline: 2px dotted $rose-white;
+    outline-offset: 4px;
+}
+
+@mixin focus-primary {
+    outline: 2px dotted $color-primary;
+    outline-offset: 4px;
+}
+
+@mixin focus-blue {
+    outline: 2px dotted $lightest-navy;
+    outline-offset: 4px;
+}
+
+@mixin focus-orange {
+    outline: 2px dotted $burnt-orange;
+    outline-offset: 4px;
+}
+
+@mixin focus-grey {
+    outline: 2px dotted $grey;
+    outline-offset: 4px;
+}
+
+@mixin focus-black {
+    outline: 2px dotted $black;
+    outline-offset: 4px;
+}

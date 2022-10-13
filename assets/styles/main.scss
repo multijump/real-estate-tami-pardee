@@ -1,0 +1,169 @@
+/* Reset browser styles to common values */
+@import "common/bootstrap-reboot.scss";
+@import "common/bootstrap-grid.scss";
+@import "common/bootstrap-classes.scss";
+
+/* Common files */
+@import "common/variables.scss";
+
+@font-face {
+  font-family: "Bayshore";
+  src: local("Bayshore"),
+   url('../fonts/Bayshore.otf') format("opentype");
+}
+
+/* Primary styles */
+body {
+	color: $color-primary;
+	font-family: $font-primary;
+	font-size: 15px;
+	line-height: 120%;
+	font-weight: 400;
+	overflow-x: hidden;
+}
+
+#__layout > div {
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+	width: 100%;
+	overflow-x: hidden;
+}
+
+#__layout main {
+	// display: flex;
+	// flex-direction: column;
+	// justify-content: flex-end;
+	flex: 1 0 auto;
+}
+
+// section.section {
+// 	position: relative;
+// 	padding: 120px 0;
+// }
+
+// .offset-bottom {
+//   padding-bottom: 0;
+// }
+
+// .offset-top {
+//   padding-top: 0;
+// }
+
+.list--reset {
+	padding: 0;
+	margin: 0;
+	list-style: none;
+}
+
+
+.badge {
+  padding: 8px 12px;
+  color: #FFFDFC;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  letter-spacing: 0.5px;
+  border-radius: 4px;
+  text-transform: uppercase;
+
+  &-name {
+    margin: 0;
+    padding-left: 4px;
+  }
+}
+
+.img--bg {
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	top: 0;
+	left: 0;
+	object-fit: cover;
+}
+
+/* MARGINS */
+
+.m-25 {
+  margin: 25px;
+}
+.mr-25 {
+  margin-right: 25px;
+}
+.ml-25 {
+  margin-left: 0;
+
+  @media (min-width: $medium-devices-width) {
+    margin-left: 25px;
+  }
+}
+.my-25 {
+  margin: 25px 0;
+}
+.mt-50 {
+  margin-top: 50px;
+}
+.mt-25 {
+  margin-top: 25px;
+}
+
+
+/* PADDINGS */
+.pb-50 {
+  padding-bottom: 50px;
+
+}
+.pt-sm-20 {
+  padding-top: 20px;
+
+  @media (min-width: $large-devices-width) {
+    padding-top: 0;
+  }
+}
+.pt-lg-50 {
+  padding-top: 0;
+
+  @media (min-width: $large-devices-width) {
+    padding-top: 50px;
+  }
+}
+.pt-60 {
+  padding-top: 60px;
+}
+
+.pb-60 {
+  padding-bottom: 60px;
+}
+
+.py-60 {
+  padding: 60px 0;
+}
+
+.pb-md-80 {
+  padding-bottom: 0;
+
+  @media (min-width: $medium-devices-width) {
+    padding-bottom: 80px;
+  }
+}
+
+
+/* HEIGHT */
+.h-80 {
+  height: 100%;
+  min-height: 80px;
+}
+
+
+.hide-scroll {
+	overflow: hidden;
+
+  .AppHeader__fixed {
+		box-shadow: none !important;
+		background: none !important;
+	}
+}
