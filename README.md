@@ -1,4 +1,6 @@
 # pardee
+The #1 Sales team in Los Angeles
+Selling homes in Venice, Santa Monica, Mar Vista, Marina del Rey, Culver City, West LA and all over Los Angeles.
 
 ## Build Setup
 
